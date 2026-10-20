@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABP: El Miedo y la Inteligencia Emocional</title>
+    <title>LA ANATOMÍA DEL MIEDO | Inteligencia Emocional</title>
     <!-- Importación de tipografía Mont (Fontfabric) / Montserrat fallback -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@
             color: var(--accent-color);
         }
 
-        /* Header / Hero */
+        /* Header / Hero Estilo Revista */
         header {
             background: linear-gradient(180deg, rgba(22,27,34,0.95) 0%, rgba(11,14,20,1) 100%);
             text-align: center;
@@ -87,20 +87,22 @@
         header h1 {
             font-family: var(--font-mont);
             color: var(--heading-color);
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 900;
             margin-bottom: 15px;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
             text-shadow: 0 0 20px rgba(230, 126, 34, 0.25);
         }
 
         header .subtitle {
             font-family: var(--font-mont);
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--accent-color);
             max-width: 750px;
             margin: 0 auto 30px auto;
             font-weight: 400;
+            font-style: italic;
         }
 
         /* Sección Integrantes */
@@ -337,7 +339,7 @@
 <body>
 
     <nav>
-        <div class="logo">ABP: Miedo & IE</div>
+        <div class="logo">LA ANATOMÍA DEL MIEDO</div>
         <ul>
             <li><a href="#introduccion">Salud Mental</a></li>
             <li><a href="#pilares">Pilares IE</a></li>
@@ -349,10 +351,10 @@
     </nav>
 
     <header>
-        <h1>EL MIEDO & LA INTELIGENCIA EMOCIONAL</h1>
-        <p class="subtitle">Investigación, producción audiovisual y herramientas de autoconocimiento.</p>
+        <h1>LA ANATOMÍA DEL MIEDO</h1>
+        <p class="subtitle">Inteligencia emocional, ciencia y supervivencia en la mente humana.</p>
         
-        <!-- Integrantes del Grupo con etiqueta -->
+        <!-- Integrantes del Grupo -->
         <div class="team-container">
             <span class="team-label">Integrantes:</span>
             <span class="team-badge">Ian Godoy</span>
@@ -380,7 +382,7 @@
         </section>
 
         <!-- BLOQUE 2: LOS 5 PILARES DE GOLEMAN -->
-        <secion id="pilares">
+        <section id="pilares">
             <h2 class="section-title">Los 5 Pilares de la Inteligencia Emocional</h2>
             <div class="card">
                 <div class="pillar-item">
@@ -399,7 +401,7 @@
                     <strong>Habilidades Sociales:</strong> Comunicar lo que nos pasa, poner límites sanos y resolver conflictos sin violencia.
                 </div>
             </div>
-        </secion>
+        </section>
 
         <!-- BLOQUE 3: EL MIEDO Y LA BIOLOGÍA -->
         <section id="miedo">
@@ -416,7 +418,7 @@
             </div>
         </section>
 
-        <!-- BLOQUE NUEVO: OPINIÓN PROFESIONAL / EXPERTA -->
+        <!-- BLOQUE 4: OPINIÓN PROFESIONAL / EXPERTA -->
         <section id="experta">
             <h2 class="section-title">Visión Profesional: El Miedo y los Traumas</h2>
             <div class="card">
@@ -434,7 +436,7 @@
             </div>
         </section>
 
-        <!-- BLOQUE 4: VOCES / INVESTIGACIÓN Y TRANSCRIPCIÓN DE ENTREVISTA -->
+        <!-- BLOQUE 5: VOCES / INVESTIGACIÓN Y TRANSCRIPCIÓN DE ENTREVISTA -->
         <section id="entrevistas">
             <h2 class="section-title">Voces e Investigación en Terreno</h2>
             
@@ -472,7 +474,7 @@
             </div>
         </section>
 
-        <!-- BLOQUE 5: TEST INTERACTIVO (EMOQUEST) -->
+        <!-- BLOQUE 6: TEST INTERACTIVO (EMOQUEST) -->
         <section id="test">
             <h2 class="section-title">Auto-Evaluación Interactiva (Radar Emocional)</h2>
             <div class="quiz-box">
@@ -488,7 +490,7 @@
     </div>
 
     <footer>
-        <p><strong>Proyecto ABP: Inteligencia Emocional & Taller Audiovisual</strong></p>
+        <p><strong>Proyecto ABP: La Anatomía del Miedo & Taller Audiovisual</strong></p>
         <p>Integrantes: Ian Godoy, Ramiro Córdoba, Naile Gallizzi y Naila Díaz</p>
     </footer>
 

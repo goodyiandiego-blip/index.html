@@ -11,13 +11,13 @@
     
     <style>
         :root {
-            --bg-color: #0b0e14;
-            --card-bg: #161b22;
-            --accent-color: #e67e22;
-            --accent-hover: #d35400;
-            --text-color: #c9d1d9;
-            --heading-color: #ffffff;
-            --border-color: #30363d;
+            --bg-color: #000000;         /* Negro Abisal */
+            --card-bg: #1D2B3F;          /* Azul de Niebla Profunda */
+            --accent-color: #304A6C;     /* Azul de Mar y Niebla (Acentos y Bordes) */
+            --accent-hover: #445c7d;     /* Tono hover para interactividad */
+            --text-color: #A4ABB5;       /* Gris Neblina Medio (Textos secundarios) */
+            --heading-color: #F5F7FA;    /* Blanco de Niebla Puro (Títulos) */
+            --border-color: #304A6C;     /* Bordes estilizados con la paleta */
             --font-mont: 'Mont', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
@@ -73,12 +73,12 @@
         }
 
         nav a:hover {
-            color: var(--accent-color);
+            color: var(--heading-color);
         }
 
         /* Header / Hero Estilo Revista */
         header {
-            background: linear-gradient(180deg, rgba(22,27,34,0.95) 0%, rgba(11,14,20,1) 100%);
+            background: linear-gradient(180deg, rgba(29,43,63,0.85) 0%, rgba(0,0,0,1) 100%);
             text-align: center;
             padding: 90px 20px 60px 20px;
             border-bottom: 2px solid var(--accent-color);
@@ -92,13 +92,13 @@
             margin-bottom: 15px;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(230, 126, 34, 0.25);
+            text-shadow: 0 0 20px rgba(48, 74, 108, 0.4);
         }
 
         header .subtitle {
             font-family: var(--font-mont);
             font-size: 1.25rem;
-            color: var(--accent-color);
+            color: var(--text-color);
             max-width: 750px;
             margin: 0 auto 30px auto;
             font-weight: 400;
@@ -125,7 +125,7 @@
 
         .team-badge {
             font-family: var(--font-mont);
-            background-color: rgba(230, 126, 34, 0.12);
+            background-color: rgba(48, 74, 108, 0.3);
             border: 1px solid var(--accent-color);
             color: var(--heading-color);
             padding: 6px 16px;
@@ -163,14 +163,14 @@
             border-radius: 10px;
             padding: 25px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
             transition: transform 0.2s, border-color 0.2s;
             margin-bottom: 20px;
         }
 
         .card:hover {
             transform: translateY(-3px);
-            border-color: var(--accent-color);
+            border-color: var(--heading-color);
         }
 
         .card h3 {
@@ -193,14 +193,14 @@
         }
 
         .pillar-item strong {
-            color: var(--accent-color);
+            color: var(--heading-color);
             font-weight: 700;
         }
 
         /* Expert quote / highlights */
         .expert-quote {
             font-style: italic;
-            color: var(--accent-color);
+            color: var(--heading-color);
             font-size: 1.05rem;
             margin-bottom: 15px;
             border-left: 3px solid var(--accent-color);
@@ -214,7 +214,7 @@
 
         .btn-video {
             display: inline-block;
-            background-color: #21262d;
+            background-color: var(--accent-color);
             color: var(--heading-color);
             border: 1px solid var(--border-color);
             padding: 8px 16px;
@@ -227,13 +227,12 @@
         }
 
         .btn-video:hover {
-            background-color: var(--accent-color);
-            color: #000;
+            background-color: var(--accent-hover);
         }
 
         /* Transcript box */
         .transcript-box {
-            background-color: #21262d;
+            background-color: #0b131e;
             border-left: 4px solid var(--accent-color);
             padding: 15px;
             border-radius: 6px;
@@ -267,7 +266,7 @@
         .quiz-option {
             display: block;
             width: 100%;
-            background: #21262d;
+            background: #0b131e;
             color: var(--text-color);
             padding: 14px 18px;
             margin: 10px 0;
@@ -283,24 +282,24 @@
 
         .quiz-option:hover {
             background-color: var(--accent-color);
-            color: #000;
-            font-weight: 800;
+            color: var(--heading-color);
         }
 
         .result-box {
             margin-top: 20px;
             padding: 15px;
             border-radius: 6px;
-            background-color: rgba(230, 126, 34, 0.1);
+            background-color: rgba(48, 74, 108, 0.4);
             border-left: 4px solid var(--accent-color);
             display: none;
+            color: var(--heading-color);
         }
 
         /* Drive Link Button */
         .btn-drive {
             display: inline-block;
             background-color: var(--accent-color);
-            color: #ffffff;
+            color: var(--heading-color);
             padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
@@ -325,7 +324,7 @@
             text-align: center;
             padding: 40px 20px;
             background-color: var(--card-bg);
-            color: #8b949e;
+            color: var(--text-color);
             margin-top: 60px;
             border-top: 1px solid var(--border-color);
             font-family: var(--font-mont);

@@ -84,6 +84,17 @@
             border-bottom: 2px solid var(--accent-color);
         }
 
+        /* Estilo para la imagen de banner */
+        .banner-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+        }
+
         header h1 {
             font-family: var(--font-mont);
             color: var(--heading-color);
@@ -350,6 +361,9 @@
     </nav>
 
     <header>
+        <!-- Imagen añadida como banner principal -->
+        <img src="80204.jpg" alt="La anatomía del miedo - Banner" class="banner-img">
+        
         <h1>LA ANATOMÍA DEL MIEDO</h1>
         <p class="subtitle">Inteligencia emocional, ciencia y supervivencia en la mente humana.</p>
         
@@ -477,36 +491,18 @@
         <section id="test">
             <h2 class="section-title">Auto-Evaluación Interactiva (Radar Emocional)</h2>
             <div class="quiz-box">
-                <div class="quiz-question" id="q-text">Cuando te enfrentas a una situación de mucha incertidumbre o temor, ¿cuál suele ser tu primera reacción?</div>
-                <button class="quiz-option" onclick="evaluar('paralisis')">A) Me paralizo y me cuesta tomar decisiones.</button>
-                <button class="quiz-option" onclick="evaluar('evitacion')">B) Busco distraerme rápido o evitar pensar en el tema.</button>
-                <button class="quiz-option" onclick="evaluar('gestion')">C) Hago una pausa, respiro e intento identificar qué me asusta.</button>
-
-                <div id="quiz-res" class="result-box"></div>
+                <div class="quiz-question" id="quiz-q">Cargando pregunta...</div>
+                <div id="quiz-options-container"></div>
+                <div class="result-box" id="quiz-result"></div>
             </div>
         </section>
 
     </div>
 
     <footer>
-        <p><strong>Proyecto ABP: La Anatomía del Miedo & Taller Audiovisual</strong></p>
-        <p>Integrantes: Ian Godoy, Ramiro Córdoba, Naile Gallizzi y Naila Díaz</p>
+        <p><strong>Proyecto Académico | La Anatomía del Miedo</strong></p>
+        <p>Inteligencia Emocional y Psicología Aplicada</p>
     </footer>
-
-    <script>
-        function evaluar(tipo) {
-            const res = document.getElementById('quiz-res');
-            res.style.display = "block";
-
-            if(tipo === 'paralisis') {
-                res.innerHTML = "<strong>💡 Recomendación de Autorregulación:</strong> La parálisis ocurre por sobrecarga del sistema nervioso. Prueba la respiración diafragmática (4 segundos inhalar, 4 mantener, 4 exhalar) para indicarle a tu cuerpo que estás a salvo.";
-            } else if(tipo === 'evitacion') {
-                res.innerHTML = "<strong>💡 Recomendación de Autoconocimiento:</strong> Evitar la emoción la intensifica a largo plazo. Prueba escribir en papel a qué le tienes miedo exactamente para procesarlo de forma estructurada.";
-            } else if(tipo === 'gestion') {
-                res.innerHTML = "<strong>🌟 ¡Excelente manejo de IE!</strong> Estás aplicando los dos primeros pilares de Goleman: Autoconocimiento y Autorregulación.";
-            }
-        }
-    </script>
 
 </body>
 </html>

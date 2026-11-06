@@ -264,6 +264,28 @@
             margin-bottom: 0;
         }
 
+        /* Video del proyecto */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+            background-color: #000;
+            margin-top: 15px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         /* Quiz Styling */
         .quiz-box {
             background-color: var(--card-bg);
@@ -361,6 +383,7 @@
             <li><a href="#miedo">El Miedo</a></li>
             <li><a href="#experta">Visión Experta</a></li>
             <li><a href="#entrevistas">Entrevistas</a></li>
+            <li><a href="#video">Video</a></li>
             <li><a href="#test">Test</a></li>
         </ul>
     </nav>
@@ -491,6 +514,19 @@
                     <li>¿Le tienes miedo a la oscuridad o a lo que te imaginas que se esconde en ella?</li>
                 </ul>
                 <a href="https://drive.google.com/drive/folders/1nJ4w3PBWIFYXPAnvYk_3rnOb0ExfJYW1?usp=drive_link" target="_blank" class="btn-drive">🎬 Ver carpeta completa de Videos y Entrevistas en Drive</a>
+            </div>
+        </section>
+
+        <!-- BLOQUE VIDEO DEL PROYECTO -->
+        <section id="video">
+            <h2 class="section-title">Nuestro Video</h2>
+            <div class="card">
+                <h3>La Anatomía del Miedo: el video del proyecto</h3>
+                <p>Mirá el video que realizamos como parte del proyecto, donde reunimos todo lo investigado sobre el miedo y la inteligencia emocional.</p>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/E5IzmC8324g" title="La Anatomía del Miedo - Video del proyecto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/E5IzmC8324g" target="_blank" class="btn-video">▶️ Ver el video en YouTube</a>
             </div>
         </section>
 
